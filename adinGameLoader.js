@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
 const headTag = document.getElementsByTagName('head')[0];
 
 const styleLink = 'style/adinGameLoader.css';
@@ -7,6 +6,7 @@ const myAdsCode = document.createElement('div');
 myAdsCode.style.cssText = 'position:absolute;z-index:9999;background-color:black;color:lightyellow;width:100%;height:100%;padding:0;margin:0';
 myAdsCode.setAttribute("id", "adsCode");
 document.body.prepend(myAdsCode);
+
 
 const adinPreroll = document.createElement('div');
 adinPreroll.setAttribute('id', 'preroll');
@@ -98,7 +98,6 @@ startGame.onclick = function() {
         console.log("Ad Could not be loaded, load your content here");
     }
 }
-});
 
 
 
