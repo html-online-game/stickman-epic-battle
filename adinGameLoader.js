@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 const headTag = document.getElementsByTagName('head')[0];
 
 const styleLink = 'style/adinGameLoader.css';
@@ -98,6 +99,7 @@ startGame.onclick = function() {
         console.log("Ad Could not be loaded, load your content here");
     }
 }
+});
 
 
 
