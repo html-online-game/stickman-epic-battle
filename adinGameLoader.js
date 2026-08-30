@@ -8,7 +8,6 @@ myAdsCode.style.cssText = 'position:absolute;z-index:9999;background-color:black
 myAdsCode.setAttribute("id", "adsCode");
 document.body.prepend(myAdsCode);
 
-
 const adinPreroll = document.createElement('div');
 adinPreroll.setAttribute('id', 'preroll');
 document.body.prepend(adinPreroll);
