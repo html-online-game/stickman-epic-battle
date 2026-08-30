@@ -6,12 +6,6 @@
   <title>Stickman Epic Battle</title>
   <link rel="shortcut icon" href="style/favicon.ico">
   <link rel="stylesheet" href="style/style.css">
-  <script src="adinGameLoader.js"></script>
-  <script src="UnityLoader.js"></script>
-  <script src="UnityProgress.js"></script>
-  <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function () { UnityProgress(gameInstance, "complete") } } });
-  </script>
 </head>
 
 <body>
@@ -23,6 +17,12 @@
       <div class="title">Stickman Epic Battle</div>
     </div>
   </div>
+  <script src="adinGameLoader.js"></script>
+  <script src="UnityLoader.js"></script>
+  <script src="UnityProgress.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function () { UnityProgress(gameInstance, "complete") } } });
+  </script>
 </body>
 
 </html>
